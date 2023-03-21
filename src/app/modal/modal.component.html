@@ -1,0 +1,46 @@
+<mat-toolbar color="primary">
+    <span>Add Employee Details</span>
+    <span class="example-spacer"></span>
+    <button mat-raised-button class="close" mat-dialog-close><mat-icon>close</mat-icon></button>
+</mat-toolbar>
+<div class="container">
+<form [formGroup]="employeeForm">
+    <p>
+        <mat-form-field appearance="outline" class="fields">
+            <mat-label>Emp Id</mat-label>
+            <input formControlName="empID" matInput placeholder="Enter Emp Id">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input formControlName="name" matInput placeholder="Enter Name">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="fields">
+            <mat-label>Email</mat-label>
+            <input formControlName="email" matInput placeholder="Enter Email">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Address</mat-label>
+            <input formControlName="address" matInput placeholder="Enter Address">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="fields">
+            <mat-label>Phone</mat-label>
+            <input formControlName="phone" matInput placeholder="Enter Phone">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Tech Skills</mat-label>
+            <input formControlName="skills" matInput placeholder="Enter Tech Skills">
+        </mat-form-field>
+        <!-- <mat-form-field appearance="outline" (click)="fileInput.click()">
+            <mat-label>Upload Photo</mat-label>
+            <input formControlName="photo" matInput placeholder="Click to upload">
+            <input hidden (change)="onFileSelected($event)" #fileInput type="file">
+            <span class="file-name">{{selectedFile?.name}}</span>
+        </mat-form-field> -->
+        <input formControlName="photo" id="image" type="file" (change)="onFileSelected($event)">
+    </p>
+</form>
+</div>
+<div class="footer" mat-dialog-action [align]="'end'">
+    <button mat-raised-button mat-dialog-close class="button">Cancel</button>
+    <button mat-raised-button class="button" (click)="addEmployee()">{{actionBtn}}</button>
+</div>

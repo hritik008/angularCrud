@@ -1,0 +1,74 @@
+{
+  "employeeList": [
+    {
+      "empID": "08",
+      "name": "Hritik",
+      "email": "hri@gmail.com",
+      "address": "dhanbad",
+      "phone": "9876543210",
+      "skills": "angular",
+      "photo": "C:\\fakepath\\poc ui.PNG",
+      "id": 1
+    },
+    {
+      "empID": "113",
+      "name": "hr",
+      "email": "hr@yahoo.com",
+      "address": "add",
+      "phone": "9876543210",
+      "skills": "JavaScript",
+      "photo": "C:\\fakepath\\thumbnail_image001.png",
+      "id": 3
+    },
+    {
+      "empID": "123",
+      "name": "hritik",
+      "email": "hr@yahoo.com",
+      "address": "add",
+      "phone": "9876543210",
+      "skills": "angular",
+      "photo": "C:\\fakepath\\avatar.jpg",
+      "id": 4
+    },
+    {
+      "empID": "1233",
+      "name": "hritik",
+      "email": "ABC@abc.com",
+      "address": "Dhonobado",
+      "phone": "201019201",
+      "skills": "CS ",
+      "photo": "C:\\Users\\hr.ranjan\\Pictures\\Saved Pictures\\Agent portal image.PNG",
+      "id": 5
+    },
+    {
+      "empID": "12",
+      "name": "hritik",
+      "email": "hri@gmail.com",
+      "address": "add",
+      "phone": "9876543210",
+      "skills": "Java",
+      "photo": "C:\\fakepath\\avatar.jpg",
+      "id": 6
+    },
+    {
+      "empID": "12`",
+      "name": "Hritik",
+      "email": "hri@gmail.com",
+      "address": "add",
+      "phone": "9876543210",
+      "skills": "Angular",
+      "photo": "",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
